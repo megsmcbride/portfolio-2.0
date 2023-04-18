@@ -1,19 +1,12 @@
 .navbar-container nav {
- position: relative;
-}
+  border-top: 2.5px solid hsl(74, 79%, 36%);
+  border-bottom: 4px solid hsl(74, 79%, 36%);
+  box-shadow: 0.25rem 0 0 0.125rem rgb(0 0 0 / 11%);
+  height: 95px;
+  align-items: flex-end;
 
-.navbar-container::after, .navbar-container::before {
-  border-bottom: 2.5px solid hsl(74, 79%, 36%);
-  border-top: 4px solid hsl(74, 79%, 36%);
-  content: "";
-  position: absolute;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  left: 0;
-  bottom: 0;
-
-  transition: transform 0.3s ease;
 }
+ 
 
 .footer-container {
   border-top: 2.5px solid hsl(74, 79%, 36%);
@@ -30,7 +23,7 @@
   font-size: 23px;
   font-weight: 600;
   text-decoration: none;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .nav-item {
@@ -127,6 +120,8 @@ body {
 }
 
 
+/* Projects */
+
 
 .projects-button-container a{
   font-family: inherit;
@@ -170,4 +165,35 @@ body {
   font-family: "Righteous", sans-serif;
   font-size: 25px;
   margin-right: 10px;
+}
+
+
+/* home */
+
+.home-container {
+  width: 500px;
+}
+.home-container h1 {
+  transition: all 0.5s;
+  -webkit-text-stroke: 4px hsl(46, 21%, 88%);
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 10rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 10px 10px 0px hsl(73, 19%, 60%),
+    15px 15px 0px hsl(80, 30%, 42%),
+    20px 20px 0px  hsl(92, 45%, 32%),
+    25px 25px 0px hsl(92, 25%, 22%),
+    45px 45px 10px hsl(95, 16%, 16%);
+  cursor: pointer;
+}
+
+.home-container h1:hover  {
+  font-variation-settings: "wght" 100, "ital" 0;
+  -webkit-text-stroke: 4px hsl(92, 45%, 32%);
+  color: hsl(92, 45%, 32%);
+
+
+  text-shadow: none;
 }
