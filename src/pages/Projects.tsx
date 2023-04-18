@@ -2,8 +2,13 @@ import React from "react";
 
 function Projects() {
   return (
-  <>
-    <h3>projects</h3></>
+    <>
+      <div className="projects-button-container">
+        <a className="projects-button">
+          <span className="projects-number">1</span> TuneSquad
+        </a>
+      </div>
+    </>
   );
 }
 
