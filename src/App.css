@@ -8,14 +8,21 @@ body {
   box-shadow: 0.25rem 0 0 0.125rem rgb(0 0 0 / 11%);
   height: 95px;
   align-items: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .footer-container {
+  display: flex;
   border-top: 4px solid hsl(74, 79%, 36%);
   border-bottom: 4px solid hsl(74, 79%, 36%);
   box-shadow: 0.25rem 0 0 0.125rem rgb(0 0 0 / 11%);
   height: 95px;
   margin-top: -97px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .navbar-container nav {
@@ -45,7 +52,6 @@ body {
 
 .sidebar-container {
   width: 100px;
-  height: 100vh;
   display: flex;
   flex-direction: row;
   margin-top: -100px;
@@ -61,6 +67,12 @@ body {
   font-weight: 600;
   letter-spacing: 3px;
   color: hsl(92, 45%, 32%);
+}
+
+
+.layout-container {
+  margin-top: 101px;
+  height: calc(100vh - 200px);
 }
 
 @media screen and (max-width: 1250px) {
@@ -100,7 +112,6 @@ body {
 
 /* Projects */
 
-
 .projects-layout {
   display: flex;
   flex-direction: row;
@@ -116,17 +127,19 @@ body {
   width: 800px;
   height: 500px;
   background-color: black;
-
 }
 
 @media (min-width: 600px) {
-  .projects-button-container { grid-template-columns: repeat(2, 1fr); }
+  .projects-button-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 900px) {
-  .projects-button-container { grid-template-columns: repeat(3, 1fr); }
+  .projects-button-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
 
 .projects-button-container a {
   font-family: inherit;
@@ -184,13 +197,11 @@ body {
   margin-bottom: 40px;
 }
 
-
 .projects-container {
-width: 100%;
-display: flex;
-flex-direction: column;
-margin-top: -50px;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -50px;
 }
 
 /* home */
@@ -199,9 +210,7 @@ margin-top: -50px;
   width: calc(100% - 100px);
   height: 100%;
   justify-items: center;
-
 }
-
 
 .home-container h1 {
   transition: all 0.5s;
@@ -209,12 +218,12 @@ margin-top: -50px;
   font-variation-settings: "wght" 900, "ital" 1;
   text-align: center;
   color: transparent;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-shadow: 10px 10px 0px hsl(73, 19%, 60%), 15px 15px 0px hsl(80, 30%, 42%),
     20px 20px 0px hsl(92, 45%, 32%), 25px 25px 0px hsl(92, 25%, 22%),
     45px 45px 10px hsl(95, 16%, 16%);
   cursor: pointer;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .home-container h1:hover {
