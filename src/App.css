@@ -27,6 +27,8 @@ body {
 
 .corner-container {
   width: 100px;
+  height: 100%;
+  margin-right: auto;
   border-right: 4px solid hsl(74, 79%, 36%);
 
 }
