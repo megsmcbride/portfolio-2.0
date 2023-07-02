@@ -25,6 +25,12 @@ body {
   width: 100%;
 }
 
+.corner-container {
+  width: 100px;
+  border-right: 4px solid hsl(74, 79%, 36%);
+
+}
+
 .navbar-container nav {
   display: flex;
   justify-content: flex-end;
@@ -52,6 +58,7 @@ body {
 
 .sidebar-container {
   width: 100px;
+
   display: flex;
   flex-direction: row;
   margin-top: -100px;
