@@ -25,13 +25,6 @@ body {
   width: 100%;
 }
 
-.corner-container {
-  width: 100px;
-  height: 100%;
-  margin-right: auto;
-  border-right: 4px solid hsl(74, 79%, 36%);
-
-}
 
 .navbar-container nav {
   display: flex;
@@ -60,10 +53,9 @@ body {
 
 .sidebar-container {
   width: 100px;
-
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  margin-top: -100px;
   font-family: "Tajawal", sans-serif;
   justify-content: center;
   align-items: center;
@@ -228,7 +220,7 @@ body {
   text-align: center;
   color: transparent;
   font-family: "Raleway", sans-serif;
-  text-shadow: 10px 10px 0px hsl(73, 19%, 60%), 15px 15px 0px hsl(80, 30%, 42%),
+  text-shadow: 10px 12px 0px hsl(73, 19%, 60%), 15px 15px 0px hsl(80, 30%, 42%),
     20px 20px 0px hsl(92, 45%, 32%), 25px 25px 0px hsl(92, 25%, 22%),
     45px 45px 10px hsl(95, 16%, 16%);
   cursor: pointer;
