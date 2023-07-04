@@ -106,7 +106,7 @@ body {
   }
 
   .home-container h1 {
-    font-size: 13rem;
+    font-size: 8rem;
     letter-spacing: 10px;
   }
 }
@@ -115,18 +115,17 @@ body {
 
 .projects-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .projects-button-container {
-  max-width: 1200px;
   display: grid;
-  width: 800px;
+  max-width: 80%;
 }
 
 .projects-image {
-  width: 800px;
-  height: 500px;
+  width: 50vw;
+  height: 50vh;
   background-color: black;
 }
 
@@ -183,26 +182,14 @@ body {
   margin-right: 10px;
 }
 
-.projects-container h1 {
-  -webkit-text-stroke: 4px hsl(46, 21%, 88%);
-  font-variation-settings: "wght" 900, "ital" 1;
-  text-align: center;
-  color: transparent;
-  font-family: "Meta", sans-serif;
-  text-shadow: 10px 10px 0px hsl(73, 19%, 60%), 15px 15px 0px hsl(80, 30%, 42%),
-    20px 20px 0px hsl(92, 45%, 32%), 25px 25px 0px hsl(92, 25%, 22%),
-    45px 45px 10px hsl(95, 16%, 16%);
-  cursor: pointer;
-  margin-top: 0px;
-  font-size: 7rem;
-  margin-bottom: 40px;
-}
+
 
 .projects-container {
-  width: 100%;
+  width: calc(100% - 100px);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: -50px;
+  justify-items: center;
 }
 
 /* home */
@@ -215,7 +202,7 @@ body {
 
 .home-container h1 {
   transition: all 0.5s;
-  -webkit-text-stroke: 5px hsl(46, 21%, 88%);
+  -webkit-text-stroke: 10px hsl(46, 21%, 88%);
   font-variation-settings: "wght" 900, "ital" 1;
   text-align: center;
   color: transparent;
@@ -229,7 +216,7 @@ body {
 
 .home-container h1:hover {
   font-variation-settings: "wght" 100, "ital" 0;
-  -webkit-text-stroke: 2px hsl(92, 45%, 32%);
+  -webkit-text-stroke: 12px hsl(92, 45%, 32%);
   color: hsl(92, 45%, 32%);
   text-shadow: none;
 }
